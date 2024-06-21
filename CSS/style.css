@@ -225,6 +225,7 @@ body {
     position: relative;
     width: 380px;
     height: 380px;
+    background-color: white; /* Ajoutez cette ligne */
     border-radius: 50%;
     z-index: 1;
 }
@@ -372,4 +373,4 @@ canvas {
     100% {
       opacity: 1;
     }
-  }
+}
