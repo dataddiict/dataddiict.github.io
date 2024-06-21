@@ -36,7 +36,6 @@ body {
     pointer-events: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    
 }
 
 .navbar a {
@@ -50,6 +49,7 @@ body {
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+
 .navbar a::after {
     content: '';
     width: 0;
@@ -85,7 +85,6 @@ body {
 .home-content {
     max-width: 600px;
     padding: 50px;
-    /* margin-left: -30px; */
 }
 
 .home-content h1 {
@@ -95,7 +94,7 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .7s;
-}   
+}
 
 .home-content h3 {
     font-size: 32px;
@@ -142,7 +141,6 @@ body {
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 0.4s;
-    
 }
 
 .home-sci a:hover {
@@ -183,7 +181,6 @@ body {
 .home-img .glowing-circle {
     width: 100%;
     height: 100%;
-   
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -195,7 +192,7 @@ body {
     position: absolute;
     width: 380px;
     height: 380px;
-    background-color:black;
+    background-color: black;
     border-radius: 50%;
 }
 
@@ -225,7 +222,7 @@ body {
     position: relative;
     width: 380px;
     height: 380px;
-    background-color: white; /* Ajoutez cette ligne */
+    background-color: white; /* Ajouté */
     border-radius: 50%;
     z-index: 1;
 }
@@ -253,44 +250,94 @@ canvas {
     left: auto;
     background-color: black;
     z-index: -1;
-    background-size:cover;
+    background-size: cover;
     background-blend-mode: multiply;
     background-size: auto;
     scroll-behavior: smooth;
 }
 
-
 /* ---------------------------About----------------------- */
 
 .about {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-    margin-top: 10% ;
-}
-    
-.about-img img{
-    padding: auto;
+    padding: 60px 20px;  /* Ajouté */
+    margin-top: 60px;    /* Ajouté */
 }
 
-.about-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
+.about h2 {
+    margin-bottom: 20px; /* Ajouté */
 }
 
-.about-content p{
-    font-size: 16px;
-    margin: 20px 0 0;
-    text-align: left;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1.3s;
+.about p {
+    line-height: 1.6;    /* Ajouté */
+}
+
+/* ---------------------------Skills----------------------- */
+
+.skill {
+    width: 100%;
+    padding: 60px 20px;  /* Ajouté */
+    margin-top: 60px;    /* Ajouté */
+}
+
+.skill h2 {
+    margin-bottom: 20px; /* Ajouté */
+}
+
+.skill ul {
+    padding-left: 20px;  /* Ajouté */
+}
+
+.skill li {
+    margin-bottom: 10px; /* Ajouté */
+}
+
+/* ---------------------------Projects----------------------- */
+
+.project {
+    width: 100%;
+    padding: 60px 20px;  /* Ajouté */
+    margin-top: 60px;    /* Ajouté */
+}
+
+.project h2 {
+    margin-bottom: 20px; /* Ajouté */
+}
+
+.project p {
+    margin-bottom: 20px; /* Ajouté */
+}
+
+.project ul {
+    padding-left: 20px;  /* Ajouté */
+}
+
+.project li {
+    margin-bottom: 10px; /* Ajouté */
+}
+
+/* ---------------------------Contact----------------------- */
+
+.contact {
+    width: 100%;
+    padding: 60px 20px;  /* Ajouté */
+    margin-top: 60px;    /* Ajouté */
+}
+
+.contact h2 {
+    margin-bottom: 20px; /* Ajouté */
+}
+
+.contact p {
+    margin-bottom: 20px; /* Ajouté */
+}
+
+.contact ul {
+    padding-left: 20px;  /* Ajouté */
+}
+
+.contact li {
+    margin-bottom: 10px; /* Ajouté */
 }
 
 /* Animation */
@@ -303,7 +350,7 @@ canvas {
     100% {
         opacity: 1;
         transform: translateY(0);
-    }    
+    }
 }
 
 @keyframes slideRight {
@@ -315,7 +362,7 @@ canvas {
     100% {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 }
 
 @keyframes slideLeft {
@@ -327,7 +374,7 @@ canvas {
     100% {
         opacity: 1;
         transform: translateX(0);
-    }    
+    }
 }
 
 @keyframes zoomIn {
@@ -351,7 +398,7 @@ canvas {
         transform: translateY(-24px);
     }
 
-    100%{
+    100% {
         transform: translate(0);
     }
 }
@@ -360,7 +407,7 @@ canvas {
     0% {
         transform: rotate(0);
     }
-    
+
     100% {
         transform: rotate(360deg);
     }
@@ -368,9 +415,10 @@ canvas {
 
 @keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
 }
